@@ -46,4 +46,4 @@ app.use('/Roulette',gestionRoulette);
 // "sync": "^0.2.5",
 // "synchronous-promise": "^2.0.15",
 // "xlsx": "^0.17.1"
-app.listen(port,'127.0.0.1',()=>console.log('Server listen on the port ',port)) ;
+app.listen(port,'0.0.0.0',()=>console.log('Server listen on the port ',port)) ;
