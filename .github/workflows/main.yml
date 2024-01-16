@@ -23,5 +23,4 @@ jobs:
           cd /home/ubuntu/backend_koorea
           git pull origin master
           cd /home/ubuntu/
-          docker-compose down
           docker-compose up --build 
