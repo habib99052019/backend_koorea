@@ -24,3 +24,4 @@ jobs:
           git pull origin master
           cd /home/ubuntu/
           docker-compose up --build 
+          echo "::set-env name=ACTION_STEP_STATUS::success"  
