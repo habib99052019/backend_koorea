@@ -20,7 +20,7 @@ jobs:
         user: root
         pass: ${{ secrets.SSH_PASSWORD }}
         run: |
-          cd /home/ubuntu/backend
+          cd /home/ubuntu/backend_koorea
           git pull origin master
           cd /home/ubuntu/
           docker-compose down
