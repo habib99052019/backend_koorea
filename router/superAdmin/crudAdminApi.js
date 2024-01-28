@@ -23,7 +23,12 @@ router.get('/', async (req, res) => {
     
         res.send(admins)
 })
-
+router.get('/vv', async (req, res) => {
+  
+    var admins = await adminSchema.find()
+    
+        res.send(admins)
+})
 router.get('/:id', async (req, res) => {
     var admin=  await adminSchema.findById(req.params.id).populate('Listejoueurs').populate('admins');
     res.send(admin)
