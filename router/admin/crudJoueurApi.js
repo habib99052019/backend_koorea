@@ -33,7 +33,7 @@ router.get('/', async (req, res) => {
     var joueurs = await joueurSchema.find(); 
     res.send(joueurs)
 })
-router.get('/jjj', async (req, res) => {
+router.get('/j', async (req, res) => {
    
    var joueurs = await joueurSchema.find(); 
     res.send(joueurs)
