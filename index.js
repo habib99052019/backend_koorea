@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');//yrdha json mhma knyt yli jya
 const app = express();//kima hekka express module  le routre
 //lllloo
 //activer les apihhhhjkk
-console.log('yhedik rabi)
+console.log('yhedik rabi');
 //aaaa
 const port=5900//y
 app.use(express.json({ extended: false, limit: '50mb' }))
