@@ -19,6 +19,7 @@ jobs:
         host: 51.222.111.183
         user: root
         pass: ${{ secrets.SSH_PASSWORD }}
+        timeout: 300
         run: |
           cd /home/ubuntu/backend_koorea
           git fetch origin
