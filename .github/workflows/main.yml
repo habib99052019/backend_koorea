@@ -21,6 +21,9 @@ jobs:
         pass: ${{ secrets.SSH_PASSWORD }}
         run: |
           cd /home/ubuntu/backend_koorea
+          git fetch origin
+          git checkout master
+          git merge origin/master
           git pull origin master
           cd /home/ubuntu/
           docker-compose up --build 
