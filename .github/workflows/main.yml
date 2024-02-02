@@ -24,6 +24,10 @@ jobs:
           cd /home/ubuntu/backend_koorea
           git fetch origin
           git checkout master
+
+    - name: Check if previous step failed
+      if: ${{ failure() }}
+      run: exit 1
           git merge origin/master
           git pull origin master
           cd /home/ubuntu/
