@@ -33,6 +33,7 @@ app.use('/joueur',joueur);
 app.use('/loginAdmin',authAdmin);
 app.use('/loginJoueur',authJoueur);
 app.use('/Roulette',gestionRoulette);
+app.use('/pub',pub);
 //routes
 // "bcrypt": "^5.0.0",
 // "body-parser": "^1.19.0",
