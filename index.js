@@ -20,6 +20,7 @@ app.use(express.urlencoded({ limit: '50mb', extended: false, parameterLimit: 500
  const authAdmin=require("./router/auth/authAdmin&SuperAdmin");
  const authJoueur=require("./router/auth/authJoueur");
  const gestionRoulette=require("./router/joueur/gestionRoulette");
+ const pub = require("./router/roulette/historique")
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization');
