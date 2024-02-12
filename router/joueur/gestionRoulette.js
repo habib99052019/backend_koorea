@@ -127,6 +127,10 @@ router.get('/', async (req, res) => {
     
         res.send(tickets)
 })
+router.get('/exmain', async (req, res) => {
+   
+  res.send({name:"haj"})
+})
 router.get('/temp', async (req, res) => {
   res.send({
     temp:temps,
